@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body bg-cream text-chocolate;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #E89AAE;
+  border-radius: 8px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-primary {
+  @apply bg-rose text-white px-6 py-3 rounded-full font-medium shadow-soft hover:bg-chocolate transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply bg-white text-chocolate border border-rose px-6 py-3 rounded-full font-medium hover:bg-blush transition-all duration-300;
+}
+
+.card {
+  @apply bg-white rounded-3xl shadow-soft overflow-hidden;
+}
+
+.skeleton {
+  @apply animate-pulse bg-blush/50 rounded-2xl;
+}
